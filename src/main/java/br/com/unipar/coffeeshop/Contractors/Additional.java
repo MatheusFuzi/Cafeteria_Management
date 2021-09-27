@@ -20,46 +20,46 @@ import br.com.unipar.coffeeshop.entities.SourCreamIce;
 public enum Additional {
     LEMONZEST{
         @Override
-        public OrderAdditional getAdditional(int qunatitie, float drink){
+        public OrderAdditional getAdditional(float drink){
             return new LemonZest();
         }
     },
     CINNAMONPOWDER{
         @Override
-        public OrderAdditional getAdditional(int qunatitie, float drink){
+        public OrderAdditional getAdditional(float drink){
             return new CinnamonPowder();
         }    
     },
     PODEREDMILK{
         @Override
-        public OrderAdditional getAdditional(int qunatitie, float drink){
+        public OrderAdditional getAdditional(float drink){
             return new PowderedMilk();
         }    
     },
     SOURCRAMICE{
         @Override
-        public OrderAdditional getAdditional(int qunatitie, float drink){
+        public OrderAdditional getAdditional(float drink){
             return new SourCreamIce();
         }    
     },
     CONDENSEDMILK{
         @Override
-        public OrderAdditional getAdditional(int qunatitie, float drink){
+        public OrderAdditional getAdditional(float drink){
             return new CondensedMilk();
         }
     },
     CHOCOLATEPOWDER{
         @Override
-        public OrderAdditional getAdditional(int qunatitie, float drink){
+        public OrderAdditional getAdditional(float drink){
             return new ChocolatePowder();
         }   
     },
     COOKIE{
         @Override
-        public OrderAdditional getAdditional(int qunatitie, float drink){
+        public OrderAdditional getAdditional(float drink){
             return new Cookie();
         }    
     };
     
-    public abstract OrderAdditional getAdditional(int qunatitie, float drink);
+    public abstract OrderAdditional getAdditional(float drink);
 }

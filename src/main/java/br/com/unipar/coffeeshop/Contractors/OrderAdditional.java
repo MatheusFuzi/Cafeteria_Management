@@ -11,6 +11,6 @@ package br.com.unipar.coffeeshop.Contractors;
  */
 public interface OrderAdditional {
     
-    public double calculate(int quantitie, float drink);     
+    public double calculate(double drink);     
     
 }

@@ -16,8 +16,8 @@ public class PowderedMilk implements OrderAdditional{
     private final double ADDITIONAL_COST = 1.40;
     
     @Override
-    public double calculate(int quantitie, float drink) {
-        return drink += quantitie * ADDITIONAL_COST;
+    public double calculate(double drink) {
+        return drink + ADDITIONAL_COST;
     }
     
 }

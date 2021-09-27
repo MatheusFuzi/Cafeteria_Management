@@ -8,6 +8,7 @@ package br.com.unipar.coffeeshop.Contractors;
 import br.com.unipar.coffeeshop.entities.Coffe;
 import br.com.unipar.coffeeshop.entities.CoffeeWithMilk;
 import br.com.unipar.coffeeshop.entities.MilkWithChocolate;
+import br.com.unipar.coffeeshop.entities.MochaCoffee;
 import br.com.unipar.coffeeshop.entities.PannaExpress;
 
 /**
@@ -32,6 +33,12 @@ public enum Drink {
         public OrderDrink getDrink(float drink){
            return new MilkWithChocolate();
        }
+   },
+   MOCHA{
+      @Override
+        public OrderDrink getDrink(float drink){
+           return new MochaCoffee();
+       } 
    },
    PANNAEXPRESS{
         @Override
